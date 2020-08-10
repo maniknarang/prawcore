@@ -62,7 +62,7 @@ class FiniteRetryStrategy(RetryStrategy):
             return base + 2 * random.random()
         return None
 
-    def __init__(self, retries=3):
+    def __init__(self, retries=0):
         """Initialize the strategy.
 
         :param retries: Number of times to attempt a request.
